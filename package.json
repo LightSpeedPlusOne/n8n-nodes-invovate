@@ -1,0 +1,44 @@
+{
+  "name": "n8n-nodes-invovate",
+  "version": "0.1.0",
+  "description": "n8n community node for the Invovate invoice API — generate PDF, JSON & UBL 2.1 invoices in 11 languages.",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "invoice",
+    "invoice-api",
+    "pdf",
+    "ubl",
+    "invovate",
+    "billing"
+  ],
+  "license": "MIT",
+  "homepage": "https://invovate.com/api",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LightSpeedPlusOne/n8n-nodes-invovate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LightSpeedPlusOne/n8n-nodes-invovate/issues"
+  },
+  "engines": {
+    "node": ">=18.10"
+  },
+  "main": "index.js",
+  "files": [
+    "credentials",
+    "nodes",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "credentials/InvovateApi.credentials.js"
+    ],
+    "nodes": [
+      "nodes/Invovate/Invovate.node.js"
+    ]
+  }
+}
