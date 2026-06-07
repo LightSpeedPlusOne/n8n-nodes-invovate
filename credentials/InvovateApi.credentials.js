@@ -2,8 +2,8 @@
 
 /**
  * Invovate API credential.
- * The API key is optional: JSON totals and PDF hosted-links work anonymously;
- * a free key (inv_…) enables direct PDF/UBL bytes. Get one at https://invovate.com/auth
+ * The API key is required for PDF, UBL, QR, and hosted links; JSON totals work without it.
+ * Get a free key (inv_…) at https://invovate.com/auth
  */
 class InvovateApi {
   constructor() {
@@ -18,7 +18,7 @@ class InvovateApi {
         typeOptions: { password: true },
         default: '',
         description:
-          'Optional. Free key from https://invovate.com/auth (starts with inv_). Required only for direct PDF/UBL output; JSON totals and PDF hosted-links work without it.',
+          'Free key from https://invovate.com/auth (starts with inv_). Required for PDF, UBL, QR, and hosted links. JSON totals work without it.',
       },
     ];
     // Send the Bearer header only when a key is provided.

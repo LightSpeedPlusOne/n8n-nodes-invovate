@@ -14,9 +14,8 @@ n8n-nodes-invovate
 
 ## Credential — "Invovate API"
 
-- **API Key** (optional): a free key from https://invovate.com/auth (starts with `inv_`).
-  - JSON totals and the **PDF hosted-link** output work **without** a key.
-  - Direct **PDF binary** and **UBL** output require the key.
+- **API Key**: a free key from https://invovate.com/auth (starts with `inv_`).
+  - JSON totals work without a key. PDF (hosted-link or binary), UBL, and QR require a free key.
 
 ## Node — "Invovate"
 
@@ -25,7 +24,7 @@ Fields: **Output** (PDF hosted-link / PDF binary / JSON totals / UBL XML), **Fro
 unit price, tax %), and **Additional Fields** (number, date, due date, notes, terms, global tax).
 
 ### Output modes
-- **PDF — Hosted Link**: returns `hosted_url`, a 7-day link that renders the PDF. No key needed. Great for emailing a link.
+- **PDF — Hosted Link**: returns `hosted_url`, a 7-day link that renders the PDF. Requires a free key. Great for emailing a link.
 - **PDF — Binary File**: returns the PDF as binary data (attach it / save it). Needs a key.
 - **JSON Totals**: computed subtotal, tax, grand total, etc. No key needed.
 - **UBL 2.1 XML**: returns the XML. Needs a key.

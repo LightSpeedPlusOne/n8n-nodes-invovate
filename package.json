@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-invovate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "n8n community node for the Invovate invoice API — generate PDF, JSON & UBL 2.1 invoices in 11 languages.",
   "keywords": [
     "n8n-community-node-package",

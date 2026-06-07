@@ -2,8 +2,8 @@
 
 /**
  * Invovate n8n node — generate PDF / JSON / UBL invoices from the Invovate API.
- * Programmatic node (JS). The API key (optional) comes from the "Invovate API"
- * credential; JSON totals and PDF hosted-links work without one.
+ * Programmatic node (JS). The API key is required for PDF, UBL, QR, and hosted
+ * links; JSON totals work without one. The key comes from the "Invovate API" credential.
  */
 
 const LANGUAGES = ['en', 'nl', 'de', 'fr', 'es', 'it', 'pt', 'ar', 'ja', 'ru', 'hi'];
@@ -31,7 +31,7 @@ class Invovate {
           type: 'options',
           default: 'pdf_link',
           options: [
-            { name: 'PDF — Hosted Link (no key needed)', value: 'pdf_link' },
+            { name: 'PDF — Hosted Link (requires free key)', value: 'pdf_link' },
             { name: 'PDF — Binary File (needs key)', value: 'pdf' },
             { name: 'JSON Totals', value: 'json' },
             { name: 'UBL 2.1 XML (needs key)', value: 'ubl' },
